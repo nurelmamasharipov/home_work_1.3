@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just text"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#637560"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_secondActivity"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="Открыть второе активити"
+        android:backgroundTint="#5B3333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/btn_openGmail"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="Отправить почту"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_secondActivity"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:backgroundTint="#5B3333"/>
+
+    <Button
+        android:id="@+id/btn_openGallery"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="Открыть галерею"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_openGmail"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:backgroundTint="#5B3333"/>
+
+    <ImageView
+        android:id="@+id/img_gallery"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/nothing"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
